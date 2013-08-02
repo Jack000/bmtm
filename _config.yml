@@ -1,3 +1,7 @@
 timezone: America/Vancouver
 permalink: /:categories/:title/
 baseurl: /bmtm
+
+prose:
+  rooturl: '_posts'
+  media: 'media'
