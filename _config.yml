@@ -55,4 +55,4 @@ prose:
         field:
           element: "text"
           label: "Facebook Profile Name"
-          placeholder: "eg. 'zuck' - This is used for your profile image (optional)"
+          placeholder: "eg. zuck - This is used for your profile image (optional)"
