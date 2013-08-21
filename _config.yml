@@ -56,3 +56,26 @@ prose:
           element: "text"
           label: "Facebook Profile Name"
           placeholder: "eg. zuck - This is used for your profile image (optional)"
+    _posts/meetings:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "meeting"
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "meeting"
+      - name: "youtube"
+        field:
+          element: "text"
+          label: "Youtube Identifier"
+          placeholder: "Insert the end digits of a youtube link"
+      - name: "prepared_speeches"
+        field:
+          element: "text"
+          label: "Prepared Speeches"
+          placeholder: "eg. by Jack and Steve"
+      - name: "table_topics"
+        field:
+          element: "text"
+          label: "Table Topic Theme"
