@@ -5,3 +5,19 @@ baseurl: /bmtm
 prose:
   rooturl: '_posts'
   media: 'media'
+  metadata:
+    _posts/news:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "news"
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "news"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author Name"
+          value: ""
+            

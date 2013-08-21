@@ -340,3 +340,24 @@ display: block;
 margin: 0 0 10px 0;
 padding: 0;
 }
+
+/* form */
+form{
+display: block;
+margin: 20px 0 0 0;
+padding: 0;
+}
+
+form label{
+display: block;
+margin: 20px 0 10px 0;
+}
+
+form .text{
+width: 300px;
+padding: 5px 10px;
+}
+
+form textarea.text{
+height: 150px;
+}

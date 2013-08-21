@@ -9,6 +9,11 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
 	<script src="{{ site.baseurl }}/global.js"></script>
+	
+	<!-- calendar -->
+	<link href='{{ site.baseurl }}/fullcalendar/fullcalendar.css' rel='stylesheet' />
+	<link href='{{ site.baseurl }}/fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+	<script src='{{ site.baseurl }}/fullcalendar/fullcalendar.min.js'></script>
 </head>
 
 <body>
@@ -18,8 +23,8 @@
 	<h1 id="logo"><a href="{{ site.baseurl }}/"><span class="hidden">Burnaby Mountain Toastmasters</span></a></h1>
 	<ul id="nav">
 	<li{% if page.url == '/about/index.html' %} class="active"{% endif %}><a href="{{ site.baseurl }}/about/"><img src="{{ site.baseurl }}/images/about.png" alt="About Icon" /> About BMTM</a></li>
-	<li><a href="#"><img src="{{ site.baseurl }}/images/calendar.png" alt="Calendar Icon" /> Calendar</a></li>
-	<li{% if page.url == '/contact/index.html' %} class="active"{% endif %}><a href="#"><img src="{{ site.baseurl }}/images/contact.png" alt="Contact Icon" /> Contact</a></li>
+	<li{% if page.url == '/calendar/index.html' %} class="active"{% endif %}><a href="{{ site.baseurl }}/calendar/"><img src="{{ site.baseurl }}/images/calendar.png" alt="Calendar Icon" /> Calendar</a></li>
+	<li{% if page.url == '/contact/index.html' %} class="active"{% endif %}><a href="{{ site.baseurl }}/contact/"><img src="{{ site.baseurl }}/images/contact.png" alt="Contact Icon" /> Contact</a></li>
 	</ul>
 </div>
 
@@ -30,8 +35,8 @@
 			{% for meeting in site.categories.meeting limit:1 %}
 				<div id="meetinginfo">
 				<h1 rel="{{ meeting.date }}">Next Meeting on {{ meeting.date | date: "%B %d" }}</h1>
-				<h2>Location</h2>
-				Simon Fraser University - WMC 2320 <a href="http://www.sfu.ca/fs/files/Campus_Profile/Building_Information/Maggie_Benston_Centre/MBC_map.jpg" target="_blank"><img src="{{ site.baseurl }}/images/mapicon.png" alt="map" /></a>
+				<h2>Time &amp; Place</h2>
+				{{ meeting.date | date: "%I:%M %p" }} at Simon Fraser University - WMC 2320 <a href="http://www.sfu.ca/fs/files/Campus_Profile/Building_Information/Maggie_Benston_Centre/MBC_map.jpg" target="_blank"><img src="{{ site.baseurl }}/images/mapicon.png" alt="map" /></a>
 				<hr />
 				<h2>Prepared Speeches</h2>
 				{{ meeting.prepared_speeches }}
