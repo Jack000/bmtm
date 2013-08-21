@@ -65,6 +65,10 @@ prose:
         field:
           element: "hidden"
           value: "meeting"
+      - name: date
+        field:
+          element: "text"
+          label: "Meeting Date/Time"
       - name: "youtube"
         field:
           element: "text"
@@ -91,4 +95,4 @@ prose:
       - name: "enddate"
         field:
           element: "text"
-          label: "End Date/Time (Optional) - format as YYY-MM-DD HH:MM:SS - Hours/Minutes/Seconds may be ommitted"
+          label: "End Date/Time (Optional) <br />- format as YYY-MM-DD HH:MM:SS - Hours/Minutes/Seconds may be ommitted"
