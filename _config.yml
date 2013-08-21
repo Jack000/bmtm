@@ -68,7 +68,7 @@ prose:
       - name: date
         field:
           element: "text"
-          label: "Meeting Date/Time<br />- format as YYY-MM-DD HH:MM:SS<br />- Note Hours are in 24 hr format<br />- Hours/Minutes/Seconds may be ommitted"
+          label: "Meeting Date/Time<br />- format as YYY-MM-DD HH:MM:SS - GMT Offset<br />- Note Hours are in 24 hr format<br />- Hours/Minutes/Seconds may be ommitted<br />- Vancouver time is -0700 or -0800 GMT Offset"
       - name: "youtube"
         field:
           element: "text"
@@ -95,4 +95,4 @@ prose:
       - name: "enddate"
         field:
           element: "text"
-          label: "End Date/Time (Optional) <br />- format as YYY-MM-DD HH:MM:SS<br />- Note Hours are in 24 hr format<br />- Hours/Minutes/Seconds may be ommitted"
+          label: "End Date/Time (Optional)<br />- format as YYY-MM-DD HH:MM:SS - GMT Offset<br />- Note Hours are in 24 hr format<br />- Hours/Minutes/Seconds may be ommitted<br />- Vancouver time is -0700 or -0800 GMT Offset"
