@@ -31,7 +31,7 @@ prose:
           value: "member"
       - name: "role"
         field:
-          element: "text"
+          element: "select"
           label: "ToastMasters Club Position"
           placeholder: "Choose Position"
           options:
@@ -54,6 +54,5 @@ prose:
       - name: "facebookid"
         field:
           element: "text"
-          value: ""
           label: "Facebook Profile Name"
           placeholder: "eg. 'zuck' - This is used for your profile image (optional)"
