@@ -7,10 +7,6 @@ prose:
   media: 'media'
   metadata:
     _posts/news:
-      - name: "title"
-        field:
-          element: "text"
-          label: "News Title"
       - name: "layout"
         field:
           element: "hidden"
@@ -24,4 +20,40 @@ prose:
           element: "text"
           label: "Author Name"
           value: ""
-            
+    _posts/members:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "member"
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "member"
+      - name: "role"
+        field:
+          element: "text"
+          label: "ToastMasters Club Position"
+          placeholder: "Choose Position"
+          options:
+            - name: "Member"
+              value: "Member"
+            - name: "Club President"
+              value: "Club President"
+            - name: "Vice President Education"
+              value: "Vice President Education"
+            - name: "Vice President Membership"
+              value: "Vice President Membership"
+            - name: "Vice President Public Relations"
+              value: "Vice President Public Relations"
+            - name: "Treasurer"
+              value: "Treasurer"
+            - name: "Secretary"
+              value: "Secretary"
+            - name: "Sergeant at Arms"
+              value: "Sergeant at Arms"
+      - name: "facebookid"
+        field:
+          element: "text"
+          value: ""
+          label: "Facebook Profile Name"
+          placeholder: "eg. 'zuck' - This is used for your profile image (optional)"
