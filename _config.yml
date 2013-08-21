@@ -6,12 +6,11 @@ prose:
   rooturl: '_posts'
   media: 'media'
   metadata:
-    _posts:
+    _posts/news:
       - name: "title"
         field:
           element: "text"
-          label: "Title"
-    _posts/news:
+          label: "News Title"
       - name: "layout"
         field:
           element: "hidden"
