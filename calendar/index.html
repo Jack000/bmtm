@@ -21,7 +21,11 @@ title: Contact Burnaby Mountain Toastmasters
 			{
 				title: "{{ event.title }}",
 				start: "{{ event.date | date: "%Y-%m-%d %H:%M:%S" }}",
+				
+				{% if event.enddate %}
 				end: "{{ event.enddate | date: "%Y-%m-%d %H:%M:%S" }}",
+				{% endif %}
+				
 				url: "{{site.baseurl}}{{ event.url }}",
 				allDay: false,
 				color: "#821d24"

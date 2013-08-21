@@ -79,3 +79,16 @@ prose:
         field:
           element: "text"
           label: "Table Topic Theme"
+    _posts/events:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "event"
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "event"
+      - name: "enddate"
+        field:
+          element: "text"
+          label: "End Date/Time (Optional) - format as YYY-MM-DD HH:MM:SS - Hours/Minutes/Seconds may be ommitted"
